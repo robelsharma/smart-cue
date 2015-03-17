@@ -1,0 +1,1 @@
+It will help the gamer to install a game from .bin file by any magic ISO creator.
