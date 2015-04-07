@@ -231,7 +231,7 @@ The Library
 
 | Variable | Description |
 | ------------- | ------------- |
-| sTurnUdpAddress | TURN UDP server address  |
+| nextsTurnUdpAddress | TURN UDP server address  |
 | iTurnUdpPort | TURN UDP server port  |
 | sTurnTcpAddress | TURN TCP server address |
 | iTurnTcpPort | TURN TCP server port |
