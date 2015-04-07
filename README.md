@@ -52,21 +52,18 @@ Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents pending. All r
 > ![](media/image2.jpeg)
 >
 
-*Copyright © 2002-2013 Eyeball Networks Inc. Patented and patents pending. All rights reserved.*
 
 <span id="1.1._Supported_Platforms_and_Features" class="anchor"><span id="_bookmark2" class="anchor"></span></span>Supported Platforms and Features
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-> ![](media/image3.png)
->
-> MS-SIP library is written in C++ and available for Linux platform.
+MS-SIP library is written in C++ and available for Linux platform.
 
 ### Developer Platforms
 
-> Programming Languages: C++
->
-> Developer Tools: GCC
-
+```
+Programming Languages: C++
+Developer Tools: GCC
+```
 ### Supported Features
 
 > MS-SIP library supports the following features: Lync interoperability
