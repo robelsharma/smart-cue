@@ -1773,21 +1773,14 @@ Is the FEC distance requested by the receiver from the sender.
 
 #### OnCategoryDataChanged( iAccount, &vUri, &vCategoryName, &vCategoryValue )
 
-Fired upon change in remote buddies' category data.
+> Fired upon change in remote buddies' category data.
 
-> *iAccount:*
-
-The account number.
-
-> *vUri:*
-
-List of sip Uri of whose category data changed
-
-> *vCategoryN ame:*
->
-> List of category name *vCategoryV alue:*
-
-List of category value.
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number  |
+| `vUri` | List of sip Uri of whose category data changed |
+| `vCategoryName` | List of category name |
+| `vCategoryValue` | List of category value |
 
 #### OnSubscriberAdded( iAccount, &vSubscriber)
 
@@ -1797,14 +1790,8 @@ List of category value.
 | Variable | Description |
 | ------------- | ------------- |
 | `iAccount` | The account number  |
+| `vSubscriber` | List of new subscriber URIs |
 
-> *iAccount:*
-
-The account number.
-
-> *vSubscribe r:*
-
-List of new subscriber URIs
 
 #### OnUpdateContactList( iAccount)
 
