@@ -3,7 +3,7 @@ Eyeball MSSIPLibrary v10.0 Developer Reference Guide
 ![](media/image1.png)
 
 
-Last Modified: October 2014
+Last Modified: April 2014
 
 Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents pending. All rights reserved.
 
@@ -96,7 +96,7 @@ We use the following conventions to define a variable’s data type:
 * Variable name starting with ‘b’ such as *bAccept* refers to a Boolean data type
 * Variable name starting with ‘a’ such as aContactList refers to an array data type. This is a one-dimensional array. Storing two-dimensional information is simply done by concatenating rows to each other, forming a one-dimensional array.
 
-All strings are case-sensitive unless specified otherwise.
+> All strings are case-sensitive unless specified otherwise.
 
 <span id="2._Supported_Standards" class="anchor"><span id="_bookmark4" class="anchor"></span></span>Supported Standards
 =======================================================================================================================
@@ -128,6 +128,21 @@ All strings are case-sensitive unless specified otherwise.
 
 1.  <span id="3.1._Creating_the_Main_Objects" class="anchor"><span id="_bookmark6" class="anchor"></span></span>Creating the Main Objects
     -------------------------------------------------------------------------------------------------------------------------------------
+
+```
+
+class SimpleApp : public IEventHandler, public IAudioDataHandlerCallback, IVideoDataHandlerCallback
+{
+public:
+MsSipAgent *agent;
+
+SimpleApp(){
+agent = new MsSipAgent(this);
+}
+}
+
+SimpleApp *app = new SimpleApp();
+```
 
 2.  <span id="3.2._Using_the_Features_and_Functions"
     class="anchor"><span id="_bookmark7"
