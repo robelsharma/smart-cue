@@ -163,8 +163,7 @@ app->agent->Login(nAccountId, sUsername, sPassword);
 
 **OR**
 
-**Without Lync server sign-up**
-**Using Trusted application**
+**Without Lync server sign-up (Using MsSipLibrary as Trusted application)**
 
 **Set Trusted application certificate and add default application endpoint**
 
@@ -185,13 +184,10 @@ app->agent->StartTrustedApplicationNegotiation(iApplicationAccount, sApplication
 app->agent->Call(nAccountId, sCallee, bConf, sConversationId);
 ```
 
-1.  <span id="3.3._Handling_Event_Notifications" class="anchor"><span
-    > id="_bookmark8" class="anchor"></span></span>**Handling Event
-    > Notifications**
+3.  <span id="3.3._Handling_Event_Notifications" class="anchor"><span> id="_bookmark8" class="anchor"></span></span>Handling Event Notifications
+-------------------------------------------------------------------------------------------------------------------------------------
 
-The application sends several event notifications to the application
-running on the MS-SIP library. The application needs to handle these
-events as necessary.
+The application sends several event notifications to the application running on the MS-SIP library. The application needs to handle these events as necessary.
 
 <span id="4._Eyeball_MS-SIP:_APIs" class="anchor"><span id="_bookmark9" class="anchor"></span></span>Eyeball MS-SIP: APIs
 =========================================================================================================================
