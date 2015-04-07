@@ -1,4 +1,4 @@
-1.  Eyeball MSSIPLibrary v10.0 Developer Reference Guide
+  Eyeball MSSIPLibrary v10.0 Developer Reference Guide
 
     1.  [1. Introduction](#introduction)
 
