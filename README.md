@@ -61,7 +61,6 @@ Developer Tools: GCC
 
 > MS-SIP library supports the following features:
 
-```
 * Lync interoperability
 * Multi-user login
 * Multi-user calls
@@ -82,7 +81,6 @@ MS-RTCP)
 * End-point Identification (MS-SIPAE)
 * Registration, provisioning mechanism (MS-SIPREGE) Header extension,GRUU(MS-SIPRE)
 * Short-term credential mechanism for Media-Relay (MS-AVEDGEA)
-```
 
 <span id="1.2._Programming_Conventions" class="anchor"><span id="_bookmark3" class="anchor"></span></span>Programming Conventions
 ---------------------------------------------------------------------------------------------------------------------------------
