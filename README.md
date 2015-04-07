@@ -1,3 +1,18 @@
+> <span id="Eyeball_MSSIPLibrary_v10.0_Developer_Ref"
+> class="anchor"><span id="_bookmark0"
+> class="anchor"></span></span>Eyeball MSSIPLibrary v10.0 Developer
+> Reference Guide
+>
+> ![](media/image1.png)
+>
+> ***Eyeball MSSIPLibrary v10.0 Developer Reference Guide***
+>
+> Last Modified: October 2014
+>
+> Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents
+> pending. All rights reserved.
+
+
 1.  Eyeball MSSIPLibrary v10.0 Developer Reference Guide
 
     1.  [Introduction](#introduction)
@@ -24,19 +39,6 @@
 
     5.  [5. Legal and Contact Information](#_bookmark12)
 
-> <span id="Eyeball_MSSIPLibrary_v10.0_Developer_Ref"
-> class="anchor"><span id="_bookmark0"
-> class="anchor"></span></span>Eyeball MSSIPLibrary v10.0 Developer
-> Reference Guide
->
-> ![](media/image1.png)
->
-> ***Eyeball MSSIPLibrary v10.0 Developer Reference Guide***
->
-> Last Modified: October 2014
->
-> Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents
-> pending. All rights reserved.
 
 <span id="1._Introduction" class="anchor"><span id="_bookmark1" class="anchor"></span></span>Introduction
 =========================================================================================================
