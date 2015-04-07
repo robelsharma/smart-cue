@@ -346,7 +346,7 @@ teared down
 | Variable | Description |
 | ------------- | ------------- |
 | `iApplicationAccount` | Is the trusted application account number. |
-| `sApplicationId:` | The name of the Trusted Applications created on Lync Server  |
+| `sApplicationId` | The name of the Trusted Applications created on Lync Server  |
 | `iListeningPort` | The port on which trusted application will listen |
 | `sApplicationGRUU` | The service GRUU of trusted application created on Lync server |
 | `sSipProxyA ddress` | Lync SIP server address |
@@ -369,101 +369,77 @@ teared down
 #### SetPresence(iAccount, &sAvailability)
 
 > Set presence for logged in user.
->
-> iAccount:
->
-> The account number.
->
-> sAvailabil ity:
->
-> Is the availability string such as - "online", "offline", "idle",
-> "busy", "inacall", "busyidle", "donotdisturb" or "away".
+
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number. |
+| `sAvailability` | Is the availability string such as - "online", "offline", "idle", "busy", "inacall", "busyidle", "donotdisturb" or "away".  |
+
 
 #### Subscribe(iAccount, &sSubscribeURI)
 
 > Subscribe for state category for the given remote user.
->
-> iAccount:
->
-> The account number.
->
-> sSubscribe URI:
->
-> URI of the remote user
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number. |
+| `sSubscribeURI` | URI of the remote user |
+
 
 #### UnSubscribe(iAccount, &sUnSubscribeURI)
 
 > Un-subscribe for state category for the given remote user.
->
-> iAccount:
->
-> The account number.
->
-> sSubscribe URI:
->
-> URI of the remote user
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number. |
+| `sUnSubscribeURI` | URI of the remote user |
 
 #### GetSubscriberList(iAccount, \*pvList)
 
 > Get the list of subscribers for the logged in user
->
-> iAccount:
->
-> The account number.
->
-> pvList:
->
-> The vector in which the list of subscribers' URIs will be inserted.
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number. |
+| `pvList` | The vector in which the list of subscribers' URIs will be inserted. |
+
 
 #### GetContactList(iAccount, \*pvList)
 
 > Get the list of contacts for the logged in user.
->
-> iAccount:
->
-> The account number.
->
-> pvList:
->
-> The vector in which the list of subscribers' URIs will be inserted.
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number. |
+| `pvList` | The vector in which the list of contacts' URIs will be inserted. |
+
 
 #### GetContactState(iAccount, &vContactURI, \*pvList)
 
 > Get the state of remote user.
->
-> iAccount:
->
-> The account number.
->
-> vContactUR I:
->
-> URIs of contacts.
->
-> pvList:
->
-> states of the contacts will be inserted.
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number. |
+| `vContactURI` | URIs of contacts. |
+| `pvList` | states of the contacts will be inserted. |
 
 #### DirectorySearch(iAccount, sSearchName)
 
 > Search for username in a domain containing desired name.
->
-> iAccount:
->
-> The account number.
->
-> sSearchNam e:
->
-> Is the name to be searched.
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number. |
+| `sSearchName` | Is the name to be searched. |
 
 ### Set codec for Media and use SRTP
 
-> *Codec for audio, video and application share can be set by the
-> following APIs. Microsoft uses their own media encryption protocol
-> named*
->
-> *MS-SRTP. This encryption feature is also available in MsSipLibrary.
-> The expected video resolution, framerate, bitrate can also be
-> published to the remote end through the library.*
+> *Codec for audio, video and application share can be set by the following APIs. Microsoft uses their own media encryption protocol named*
+
+> *MS-SRTP. This encryption feature is also available in MsSipLibrary. The expected video resolution, framerate, bitrate can also be published to the remote end through the library.*
 
 #### SetAudioCodec(iLine, bModality, ullSSRC, &sAudioCodec)
 
