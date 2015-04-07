@@ -436,6 +436,7 @@ teared down
 | `sSearchName` | Is the name to be searched. |
 
 ### Set codec for Media and use SRTP
+---------------------------------------------------------------------------------------------------------------------
 
 > *Codec for audio, video and application share can be set by the following APIs. Microsoft uses their own media encryption protocol named*
 
@@ -444,32 +445,22 @@ teared down
 #### SetAudioCodec(iLine, bModality, ullSSRC, &sAudioCodec)
 
 > Set audio codecs.
->
-> iLine:
->
-> Line number for which the audio codec will be set.
->
-> bModality:
->
-> unused
 
-ullSSRC:
-
-Is the SSRC value that would be used for audio channel
-
-sAudioCode c:
-
-comma separated audio codecs each of whose attributes are separated by
+| Variable | Description |
+| ------------- | ------------- |
+| `iLine` | Line number for which the audio codec will be set  |
+| `bModality` | unused  |
+| `ullSSRC` | Is the SSRC value that would be used for audio channel |
+| `sAudioCodec` | comma separated audio codecs each of whose attributes are separated by
 space as the following format (the optional fourth attribute is for
-fmtp):
-
+fmtp): 
 "sCodecPayload1 sCodecName1 sCodecBitrate1 [sFmtpAttr1], sCodecPayload2
 sCodecName2 sCodecBitrate2 [sFmtpAttr2]" eg., "0 PCMU 8000, 111 SIREN
-16000, 101 telephone-event 8000 0-16"
+16000, 101 telephone-event 8000 0-16" |
 
 #### SetVideoCodec (iLine, bModality, ullSSRC, &sVideoCodec)
 
-Set video codecs.
+> Set video codecs.
 
 iLine:
 
