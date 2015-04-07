@@ -145,22 +145,45 @@ SimpleApp *app = new SimpleApp();
 
 2.  <span id="3.2._Using_the_Features_and_Functions"
     class="anchor"><span id="_bookmark7"
-    class="anchor"></span></span>**Using the Features and Functions**
+    class="anchor"></span></span>Using the Features and Functions
+-------------------------------------------------------------------------------------------------------------------------------------
 
-### Set TURN and SIP servers
+**With Lync server sign-up**
 
-> **Login**
->
-> **OR**
->
-> **Using Trusted application**
->
-> **Set Trusted application certificate and add default application
-> endpoint**
->
-> **Start Trusted application negotiation and create connection**
->
-> **Call**
+**Set TURN and SIP servers**
+
+```
+app->agent->SetTurnServerConfiguration(sStunServer, nStunPort, sTurnServer, nTurnPort);
+app->agent->SetSipServerConfiguration(nAccountId, sSipServer, nSipPort, sDomain);
+```
+
+**Login**
+```
+app->agent->Login(nAccountId, sUsername, sPassword);
+```
+
+**OR**
+
+**Without Lync server sign-up**
+**Using Trusted application**
+
+**Set Trusted application certificate and add default application endpoint**
+
+```
+app->agent->SetTrustedAppDomainCertificate(iApplicationAccount, sCertificatePath); app->agent->AddTrustedApplicationEndpoint(iAccount, iApplicationAccount, sApplicationEndpoint, isDefault);
+```
+
+**Start Trusted application negotiation and create connection**
+
+```
+app->agent->StartTrustedApplicationNegotiation(iApplicationAccount, sApplicationId, iListeningPort, sApplicationGRUU, sSipProxyAddress, nSipPort, sApplicationDomain);
+```
+
+**Call**
+
+```
+app->agent->Call(nAccountId, sCallee, bConf, sConversationId);
+```
 
 1.  <span id="3.3._Handling_Event_Notifications" class="anchor"><span
     > id="_bookmark8" class="anchor"></span></span>**Handling Event
