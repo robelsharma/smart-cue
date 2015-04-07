@@ -1,6 +1,6 @@
 1.  Eyeball MSSIPLibrary v10.0 Developer Reference Guide
 
-    1.  [1. Introduction](#1._bookmark1)
+    1.  [1. Introduction](#introduction)
 
         1.  [1.1. Supported Platforms and Features](#_bookmark2)
 
