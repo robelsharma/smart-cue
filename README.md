@@ -1,28 +1,28 @@
-***Eyeball MSSIPLibrary v10.0 Developer Reference Guide***
+1.  Eyeball MSSIPLibrary v10.0 Developer Reference Guide
 
-    [1. Introduction](#introduction)
+    1.  [1. Introduction](#introduction)
 
-        [1.1. Supported Platforms and Features](#_bookmark2)
+        1.  [1.1. Supported Platforms and Features](#_bookmark2)
 
-        [1.2. Programming Conventions](#_bookmark3)
+        2.  [1.2. Programming Conventions](#_bookmark3)
 
-    [2. Supported Standards](#_bookmark4)
+    2.  [2. Supported Standards](#_bookmark4)
 
-    [3. Using Eyeball MS-SIP Library](#_bookmark5)
+    3.  [3. Using Eyeball MS-SIP Library](#_bookmark5)
 
-        [3.1. Creating the Main Objects](#_bookmark6)
+        1.  [3.1. Creating the Main Objects](#_bookmark6)
 
-        [3.2. Using the Features and Functions](#_bookmark7)
+        2.  [3.2. Using the Features and Functions](#_bookmark7)
 
-        [3.3. Handling Event Notifications](#_bookmark8)
+        3.  [3.3. Handling Event Notifications](#_bookmark8)
 
-    [4. Eyeball MS-SIP: APIs](#_bookmark9)
+    4.  [4. Eyeball MS-SIP: APIs](#_bookmark9)
 
-        [4.1 MS-SIP Methods](#_bookmark10)
+        1.  [4.1 MS-SIP Methods](#_bookmark10)
 
-        [4.2 MS-SIP Notification Events](#_bookmark11)
+        2.  [4.2 MS-SIP Notification Events](#_bookmark11)
 
-    [5. Legal and Contact Information](#_bookmark12)
+    5.  [5. Legal and Contact Information](#_bookmark12)
 
 > <span id="Eyeball_MSSIPLibrary_v10.0_Developer_Ref"
 > class="anchor"><span id="_bookmark0"
