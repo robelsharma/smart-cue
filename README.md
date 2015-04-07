@@ -21,23 +21,23 @@
 
         2.  [Programming Conventions](#_bookmark3)
 
-    2.  [2. Supported Standards](#_bookmark4)
+    2.  [Supported Standards](#_bookmark4)
 
-    3.  [3. Using Eyeball MS-SIP Library](#_bookmark5)
+    3.  [Using Eyeball MS-SIP Library](#_bookmark5)
 
-        1.  [3.1. Creating the Main Objects](#_bookmark6)
+        1.  [Creating the Main Objects](#_bookmark6)
 
-        2.  [3.2. Using the Features and Functions](#_bookmark7)
+        2.  [Using the Features and Functions](#_bookmark7)
 
-        3.  [3.3. Handling Event Notifications](#_bookmark8)
+        3.  [Handling Event Notifications](#_bookmark8)
 
-    4.  [4. Eyeball MS-SIP: APIs](#_bookmark9)
+    4.  [Eyeball MS-SIP: APIs](#_bookmark9)
 
-        1.  [4.1 MS-SIP Methods](#_bookmark10)
+        1.  [MS-SIP Methods](#_bookmark10)
 
-        2.  [4.2 MS-SIP Notification Events](#_bookmark11)
+        2.  [MS-SIP Notification Events](#_bookmark11)
 
-    5.  [5. Legal and Contact Information](#_bookmark12)
+    5.  [Legal and Contact Information](#_bookmark12)
 
 
 <span id="1._Introduction" class="anchor"><span id="_bookmark1" class="anchor"></span></span>Introduction
