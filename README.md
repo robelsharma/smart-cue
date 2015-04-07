@@ -19,13 +19,13 @@ Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents pending. All r
 
     1.  [Introduction](#introduction)
 
-        1.  [Supported Platforms and Features](#_bookmark2)
+        1.  [Supported Platforms and Features](#supported-platforms-and-features)
 
-        2.  [Programming Conventions](#_bookmark3)
+        2.  [Programming Conventions](#programming-conventions)
 
-    2.  [Supported Standards](#_bookmark4)
+    2.  [Supported Standards](#supported-standards)
 
-    3.  [Using Eyeball MS-SIP Library](#_bookmark5)
+    3.  [Using Eyeball MS-SIP Library](#using-eyeball-ms-sip-library)
 
         1.  [Creating the Main Objects](#_bookmark6)
 
