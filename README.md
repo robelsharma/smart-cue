@@ -3,17 +3,16 @@
 > class="anchor"></span></span>
 
 Eyeball MSSIPLibrary v10.0 Developer Reference Guide
-
+---------------------------------------------------------------------------------------------------------------------------------
 ![](media/image1.png)
 
-***Eyeball MSSIPLibrary v10.0 Developer Reference Guide***
 
 Last Modified: October 2014
 
 Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents pending. All rights reserved.
----------------------------------------------------------------------------------------------------------------------------------
 
 
+=========================================================================================================
 
 
 1.  Eyeball MSSIPLibrary v10.0 Developer Reference Guide
