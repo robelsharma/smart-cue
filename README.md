@@ -91,7 +91,10 @@ MS-RTCP)
 
 We use the following conventions to define a variable’s data type:
 
-Variable name starting with ‘n’ and ‘i’ such as *nFileId, iField* refers to an Integer data type Variable name starting with ‘s’ such as sUserID refers to a String data type Variable name starting with ‘b’ such as *bAccept* refers to a Boolean data type Variable name starting with ‘a’ such as aContactList refers to an array data type. This is a one-dimensional array. Storing two-dimensional information is simply done by concatenating rows to each other, forming a one-dimensional array.
+* Variable name starting with ‘n’ and ‘i’ such as *nFileId, iField* refers to an Integer data type
+* Variable name starting with ‘s’ such as sUserID refers to a String data type
+* Variable name starting with ‘b’ such as *bAccept* refers to a Boolean data type
+* Variable name starting with ‘a’ such as aContactList refers to an array data type. This is a one-dimensional array. Storing two-dimensional information is simply done by concatenating rows to each other, forming a one-dimensional array.
 
 All strings are case-sensitive unless specified otherwise.
 
@@ -100,31 +103,28 @@ All strings are case-sensitive unless specified otherwise.
 
 > The supported standard RFC are as follows: 
 
-```
-MS-AVEDGEA
 
-MS-CONMGMT MS-ICE
+* MS-AVEDGEA
+* MS-CONMGMT
+* MS-ICE
+* MS-ICE2
+* MS-ICE2BWM 
+* MS-NLMP
+* MS-PRES
+* MS-RTCP
+* MS-SDPEXT
+* MS-SIPAE
+* MS-SIPCOMP
+* MS-SIPRE
+* MS-SIPREGE
+* MS-SRTP
+* MS-TURN
+* MS-TURNBWM
 
-MS-ICE2
-
-MS-ICE2BWM MS-NLMP
-
-MS-PRES MS-RTCP MS-SDPEXT MS-SIPAE
-
-MS-SIPCOMP MS-SIPRE MS-SIPREGE MS-SRTP
->
-> MS-TURN
->
-> MS-TURNBWM
-```
 
 <span id="3._Using_Eyeball_MS-SIP_Library" class="anchor"><span id="_bookmark5" class="anchor"></span></span>Using Eyeball MS-SIP Library
 =========================================================================================================================================
 
-> ![](media/image2.jpeg)
->
-> *Copyright © 2002-2013 Eyeball Networks Inc. Patented and patents
-> pending. All rights reserved.*
 
 1.  <span id="3.1._Creating_the_Main_Objects" class="anchor"><span id="_bookmark6" class="anchor"></span></span>Creating the Main Objects
     -------------------------------------------------------------------------------------------------------------------------------------
