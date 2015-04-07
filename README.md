@@ -294,117 +294,75 @@ teared down
 #### Login (iAccount, sUsername, sPassword)
 
 > Login with a username and password.
->
-> iAccount:
->
-> The account number.
->
-> sUsername:
->
-> Username.
->
-> sPassword:
->
-> Password.
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number  |
+| `sUsername` | Username  |
+| `sPassword` | Password |
+
 
 #### Logout(iAccount)
 
 > Logout from an account.
->
-> iAccount:
->
-> The account number.
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number  |
+
 
 ### Configure Library to work without signing in
 
-> *MsSipLibrary can receive and make call and initiate an IM session
-> without sign-in . To enable this feature make MsSipLibrary a Trusted
-> App in Lync Front-End topology and create a static route for the
-> trusted app listening port for receiving call and create an
-> application endpoint for that trusted application for making outbound
-> call.*
+> *MsSipLibrary can receive and make call and initiate an IM session without sign-in . To enable this feature make MsSipLibrary a TrustedApp in Lync Front-End topology and create a static route for the trusted app listening port for receiving call and create an application endpoint for that trusted application for making outbound call.*
 
 #### SetTrustedAppDomainCertificate(iApplicationAccount, &sCertificatePath)
 
 > Set the AD signed domain certificate for trusted application domain.
 > Certificate must be in **.pem** format.
 
-iApplicati onAccount:
+| Variable | Description |
+| ------------- | ------------- |
+| `iApplicationAccount` | Is the trusted application account number  |
+| `sCertificatePath` | Is the path of the AD signed domain certificate  |
 
-Is the trusted application account number.
-
-sCertifica tePath:
-
-Is the path of the AD signed domain certificate.
 
 #### AddTrustedApplicationEndpoint(iAccount, iApplicationAccount, &sApplicationEndpoint, isDefault)
 
-Add the default and other additional endpoint to the related trusted
-application account.
+> Add the default and other additional endpoint to the related trusted application account.
 
-iAcccount:
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number provided by application (must be \>= 0)  |
+| `iApplicationAccount` | Is the trusted application account number  |
+| `sApplicationEndpoint` | SIP URI of the trusted application endpoint |
+| `isDefault` | is true if the endpoint is default, otherwise false |
 
-The account number provided by application (must be \>= 0).
+#### StartTrustedApplicationNegotiation(iApplicationAccount, &sApplicationId, iListeningPort, &sApplicationGRUU, &sSipProxyAddress, iSipPort, &sApplicationDomain)
 
-iApplicati onAccount:
+> Start trusted application negotiation with Lync server for provisioning.
 
-Is the trusted application account number.
-
-sApplicati onEndpoint
-
-:
-
-SIP URI of the trusted application endpoint.
-
-isDefault:
-
-is true if the endpoint is default, otherwise false .
-
-#### StartTrustedApplicationNegotiation(iApplicationAccount, &sApplicationId, iListeningPort,
-
-> ***&sApplicationGRUU, &sSipProxyAddress, iSipPort,
-> &sApplicationDomain)***
-
-Start trusted application negotiation with Lync server for provisioning.
-
-iApplicati onAccount:
-
-Is the trusted application account number.
-
-sApplicati onId:
-
-The name of the Trusted Applications created on Lync Server
-
-iListening Port:
-
-The port on which trusted application will listen.
-
-sApplicati onGRUU:
-
-The service GRUU of trusted application created on Lync server.
-
-sSipProxyA ddress:
-
-Lync SIP server address
-
-iSipPort:
-
-SIP server port sApplicati onDomain:
-
-> Domain of the created trusted application.
+| Variable | Description |
+| ------------- | ------------- |
+| `iApplicationAccount` | Is the trusted application account number. |
+| `sApplicationId:` | The name of the Trusted Applications created on Lync Server  |
+| `iListeningPort` | The port on which trusted application will listen |
+| `sApplicationGRUU` | The service GRUU of trusted application created on Lync server |
+| `sSipProxyA ddress` | Lync SIP server address |
+| `iSipPort` | SIP server port |
+| `sApplicationDomain` | Domain of the created trusted application |
 
 #### RemoveTrustedApplication(iApplicationAccount)
 
 > Remove trusted application with all of its endpoint.
->
-> iApplicati onAccount:
->
-> Is the trusted application account number.
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iApplicationAccount` | Is the trusted application account number. |
+
 
 ### Set and Use presence services
-
-> *Lync uses extended SIP messages for presence. By using following APIs
-> this service is achievable from the MSSIP library.*
+-------------------------------------------------------------------------
+> *Lync uses extended SIP messages for presence. By using following APIs this service is achievable from the MSSIP library.*
 
 #### SetPresence(iAccount, &sAvailability)
 
