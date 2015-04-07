@@ -1,7 +1,3 @@
-> <span id="Eyeball_MSSIPLibrary_v10.0_Developer_Ref"
-> class="anchor"><span id="_bookmark0"
-> class="anchor"></span></span>
-
 Eyeball MSSIPLibrary v10.0 Developer Reference Guide
 ---------------------------------------------------------------------------------------------------------------------------------
 ![](media/image1.png)
@@ -45,12 +41,9 @@ Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents pending. All r
 <span id="1._Introduction" class="anchor"><span id="_bookmark1" class="anchor"></span></span>Introduction
 =========================================================================================================
 
-> MS-SIP library provides tools to application developers that allow
-> integration of live audio, video communication with Lync servers and
-> clients into new or existing applications and services.
->
-> ![](media/image2.jpeg)
->
+MS-SIP library provides tools to application developers that allow integration of live audio, video communication with Lync servers and clients into new or existing applications and services.
+
+![](media/image2.jpeg)
 
 
 <span id="1.1._Supported_Platforms_and_Features" class="anchor"><span id="_bookmark2" class="anchor"></span></span>Supported Platforms and Features
@@ -66,84 +59,66 @@ Developer Tools: GCC
 ```
 ### Supported Features
 
-> MS-SIP library supports the following features: Lync interoperability
+> MS-SIP library supports the following features:
 
-Multi-user login
-
-> Multi-user calls
->
-> Certificate verification for TLS connection Audio/Video
->
-> Application share Instant Message (IM)
->
-> Trusted Application support Lync federation call support
->
-> SIP compression (MS-SIPCOMP) Bandwidth Management (MS-ICE2BWM)
-> Presence (MS-PRES)
->
-> HD video negotiation, BW estimation, PLI, VSR and more(MS-RTP,
-> MS-RTCP) Microsoft standard encryption for Multiple call (MS-SRTP)
->
-> Conncection Keep-Alive and MTLS (MS-CONMGMT) NTLMv2 mechanism
-> (MS-NLMP)
->
-> Call Hold/Resume, BW extension, MSI, Video receive capabilities and
-> more(MS-SDPEXT) End-point Identification (MS-SIPAE)
->
-> Registration, provisioning mechanism (MS-SIPREGE) Header extension,
-> GRUU and more (MS-SIPRE)
->
-> Short-term credential mechanism for Media-Relay (MS-AVEDGEA)
->
-> ![](media/image2.jpeg)
->
-> *Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents
-> pending. All rights reserved.*
+```
+* Lync interoperability
+* Multi-user login
+* Multi-user calls
+* Certificate verification for TLS connection Audio/Video
+* Application share Instant Message (IM)
+* Trusted Application support
+* Lync federation call support
+* SIP compression (MS-SIPCOMP)
+* Bandwidth Management (MS-ICE2BWM)
+* Presence (MS-PRES)
+* HD video negotiation, BW estimation, PLI, VSR and more(MS-RTP,
+MS-RTCP) 
+* Microsoft standard encryption for Multiple call (MS-SRTP)
+* Conncection Keep-Alive and MTLS (MS-CONMGMT) 
+* NTLMv2 mechanism(MS-NLMP)
+* Call Hold/Resume, BW extension, MSI, Video receive capabilities(MS-SDPEXT)
+* Video Source Request for changing media codec on realtime
+* End-point Identification (MS-SIPAE)
+* Registration, provisioning mechanism (MS-SIPREGE) Header extension,GRUU(MS-SIPRE)
+* Short-term credential mechanism for Media-Relay (MS-AVEDGEA)
+```
 
 <span id="1.2._Programming_Conventions" class="anchor"><span id="_bookmark3" class="anchor"></span></span>Programming Conventions
 ---------------------------------------------------------------------------------------------------------------------------------
 
 ### Programming Conventions
 
-> We use the following conventions to define a variable’s data type:
->
-> Variable name starting with ‘n’ and ‘i’ such as *nFileId, iField*
-> refers to an Integer data type Variable name starting with ‘s’ such as
-> sUserID refers to a String data type
->
-> Variable name starting with ‘b’ such as *bAccept* refers to a Boolean
-> data type
->
-> Variable name starting with ‘a’ such as aContactList refers to an
-> array data type. This is a one-dimensional array. Storing
-> two-dimensional information is simply done by concatenating rows to
-> each other, forming a one-dimensional array.
->
-> All strings are case-sensitive unless specified otherwise.
->
-> ![](media/image2.jpeg)
->
-> *Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents
-> pending. All rights reserved.*
+> In this document, the phrase current user refers to the local user, as opposed to the remote user.
+
+We use the following conventions to define a variable’s data type:
+
+Variable name starting with ‘n’ and ‘i’ such as *nFileId, iField* refers to an Integer data type Variable name starting with ‘s’ such as sUserID refers to a String data type Variable name starting with ‘b’ such as *bAccept* refers to a Boolean data type Variable name starting with ‘a’ such as aContactList refers to an array data type. This is a one-dimensional array. Storing two-dimensional information is simply done by concatenating rows to each other, forming a one-dimensional array.
+
+All strings are case-sensitive unless specified otherwise.
 
 <span id="2._Supported_Standards" class="anchor"><span id="_bookmark4" class="anchor"></span></span>Supported Standards
 =======================================================================================================================
 
-> The supported standard RFC are as follows: MS-AVEDGEA
->
-> MS-CONMGMT MS-ICE
->
-> MS-ICE2
->
-> MS-ICE2BWM MS-NLMP
->
-> MS-PRES MS-RTCP MS-SDPEXT MS-SIPAE
->
-> MS-SIPCOMP MS-SIPRE MS-SIPREGE MS-SRTP
+> The supported standard RFC are as follows: 
+
+```
+MS-AVEDGEA
+
+MS-CONMGMT MS-ICE
+
+MS-ICE2
+
+MS-ICE2BWM MS-NLMP
+
+MS-PRES MS-RTCP MS-SDPEXT MS-SIPAE
+
+MS-SIPCOMP MS-SIPRE MS-SIPREGE MS-SRTP
 >
 > MS-TURN
 >
 > MS-TURNBWM
+```
 
 <span id="3._Using_Eyeball_MS-SIP_Library" class="anchor"><span id="_bookmark5" class="anchor"></span></span>Using Eyeball MS-SIP Library
 =========================================================================================================================================
