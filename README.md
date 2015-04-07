@@ -3,7 +3,7 @@ Eyeball MSSIPLibrary v10.0 Developer Reference Guide
 ![](media/image1.png)
 
 
-Last Modified: April 2014
+Last Modified: April 2015
 
 Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents pending. All rights reserved.
 
@@ -127,10 +127,9 @@ We use the following conventions to define a variable’s data type:
 
 
 1.  <span id="3.1._Creating_the_Main_Objects" class="anchor"><span id="_bookmark6" class="anchor"></span></span>Creating the Main Objects
-    -------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 ```
-
 class SimpleApp : public IEventHandler, public IAudioDataHandlerCallback, IVideoDataHandlerCallback
 {
 public:
