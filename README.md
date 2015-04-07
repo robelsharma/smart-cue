@@ -143,9 +143,7 @@ agent = new MsSipAgent(this);
 SimpleApp *app = new SimpleApp();
 ```
 
-2.  <span id="3.2._Using_the_Features_and_Functions"
-    class="anchor"><span id="_bookmark7"
-    class="anchor"></span></span>Using the Features and Functions
+2.  <span id="3.2._Using_the_Features_and_Functions" class="anchor"><span id="_bookmark7" class="anchor"></span></span>Using the Features and Functions
 -------------------------------------------------------------------------------------------------------------------------------------
 
 
