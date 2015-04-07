@@ -451,8 +451,7 @@ teared down
 | `iLine` | Line number for which the audio codec will be set  |
 | `bModality` | unused  |
 | `ullSSRC` | Is the SSRC value that would be used for audio channel |
-| `sAudioCodec` | comma separated audio codecs each of whose attributes are separated by
-space as the following format (the optional fourth attribute is for
+| `sAudioCodec` | comma separated audio codecs each of whose attributes are separated by space as the following format (the optional fourth attribute is for
 fmtp): | 
 "sCodecPayload1 sCodecName1 sCodecBitrate1 [sFmtpAttr1], sCodecPayload2
 sCodecName2 sCodecBitrate2 [sFmtpAttr2]" eg., "0 PCMU 8000, 111 SIREN
