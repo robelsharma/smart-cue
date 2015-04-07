@@ -1791,7 +1791,12 @@ List of category value.
 
 #### OnSubscriberAdded( iAccount, &vSubscriber)
 
-Fired upon change in remote buddies' category data.
+> Fired upon change in remote buddies' category data.
+
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number  |
 
 > *iAccount:*
 
@@ -1803,134 +1808,81 @@ List of new subscriber URIs
 
 #### OnUpdateContactList( iAccount)
 
-Fired when the contact list in available for the logged in user
+> Fired when the contact list in available for the logged in user
 
-> *iAccount:*
 
-The account number.
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number  |
+
 
 #### OnUpdateSubscriberList( iAccount)
 
-Fired when the subscriber list (the remote users who have subscribed for
-the logged in user) in available for the logged in user
+> Fired when the subscriber list (the remote users who have subscribed for the logged in user) in available for the logged in user
 
-> *iAccount:*
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number  |
 
-The account number.
 
 #### OnReceivedChatMessage( iLine, &sContentType, &sMessage)
 
-Fired upon incoming chat message received.
+> Fired upon incoming chat message received.
 
-> *iLine:*
+| Variable | Description |
+| ------------- | ------------- |
+| `iLine` | The line on which the call is going on  |
+| `sContentType` | The content type of received chat message  |
+| `sMessage` | The content of the received chat message |
 
-The line on which the chat message received.
-
-> *sContentTy pe:*
-
-The content type of received chat message.
-
-> *sMessage:*
-
-The content of the received chat message.
 
 #### OnReceivedApplicationData(iLine, \*pRtpHeader, \*pData, iLen, iCSRCCount)
 
-Fired upon incoming application data received in application share
-session.
+> Fired upon incoming application data received in application share session.
 
-> *iLine:*
+| Variable | Description |
+| ------------- | ------------- |
+| `iLine` | The line on which the call is going on  |
+| `pRtpHeader` | The RTP header  |
+| `pData` | The data |
+| `iLen` | Length of the data |
+| `iCSRCCount` | Number of CSRC |
 
-The line on which the share is going on.
-
-> *pRtpHeader*
->
-> *:*
-
-the RTP header
-
-> *pData:*
-
-The data
-
-> *iLen:*
-
-Length of the data
-
-> *iCSRCCount*
->
-> *:*
-
-Number of CSRC
 
 #### OnUpdateCallStatus( iLine, bHold)
 
 Fired when call is held/resumed
 
-> *iLine:*
+| Variable | Description |
+| ------------- | ------------- |
+| `iLine` | The line on which the call is going on  |
+| `bHold` | True if call is held, false if it's resumed  |
 
-The line on which the call is going on.
-
-> *bHold:*
-
-True if call is held, false if it's resumed
 
 #### HandleAudioCallback( iLine, \*pRtpHeader, \*pData, iLen, iCSRCCount)
 
-Fired when data is received on the audio RTP channel
+> Fired when data is received on the audio RTP channel
 
-> *iLine:*
->
-> The line on which the call is going on.
->
-> *pRtpHeader*
->
-> *:*
->
-> the RTP header
->
-> *pData:*
->
-> The data
->
-> *iLen:*
->
-> Length of the data
->
-> *iCSRCCount*
->
-> *:*
->
-> Number of CSRC
+| Variable | Description |
+| ------------- | ------------- |
+| `iLine` | The line on which the call is going on  |
+| `pRtpHeader` | The RTP header  |
+| `pData` | The data |
+| `iLen` | Length of the data |
+| `iCSRCCount` | Number of CSRC |
+
 
 #### HandleVideoCallback( iLine, \*pRtpHeader, \*pData, iLen, iCSRCCount)
 
 > Fired when data is received on the video RTP channel
->
-> *iLine:*
->
-> The line on which the call is going on.
->
-> *pRtpHeader*
->
-> *:*
->
-> the RTP header
->
-> *pData:*
->
-> The data
->
-> *iLen:*
->
-> Length of the data
->
-> *iCSRCCount*
->
-> *:*
->
-> Number of CSRC
->
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iLine` | The line on which the call is going on  |
+| `pRtpHeader` | The RTP header  |
+| `pData` | The data |
+| `iLen` | Length of the data |
+| `iCSRCCount` | Number of CSRC |
 
 
 <span id="5.__Legal_and_Contact_Information" class="anchor"><span id="_bookmark12" class="anchor"></span></span>Legal and Contact Information
