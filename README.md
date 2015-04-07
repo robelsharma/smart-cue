@@ -148,6 +148,7 @@ SimpleApp *app = new SimpleApp();
     class="anchor"></span></span>Using the Features and Functions
 -------------------------------------------------------------------------------------------------------------------------------------
 
+
 **With Lync server sign-up**
 
 **Set TURN and SIP servers**
@@ -170,7 +171,8 @@ app->agent->Login(nAccountId, sUsername, sPassword);
 **Set Trusted application certificate and add default application endpoint**
 
 ```
-app->agent->SetTrustedAppDomainCertificate(iApplicationAccount, sCertificatePath); app->agent->AddTrustedApplicationEndpoint(iAccount, iApplicationAccount, sApplicationEndpoint, isDefault);
+app->agent->SetTrustedAppDomainCertificate(iApplicationAccount, sCertificatePath);
+app->agent->AddTrustedApplicationEndpoint(iAccount, iApplicationAccount, sApplicationEndpoint, isDefault);
 ```
 
 **Start Trusted application negotiation and create connection**
