@@ -184,46 +184,33 @@ app->agent->StartTrustedApplicationNegotiation(iApplicationAccount, sApplication
 app->agent->Call(nAccountId, sCallee, bConf, sConversationId);
 ```
 
-3.  <span id="3.3._Handling_Event_Notifications" class="anchor"><span> id="_bookmark8" class="anchor"></span></span>Handling Event Notifications
+3.  <span id="3.3._Handling_Event_Notifications" class="anchor"><span id="_bookmark8" class="anchor"></span></span>Handling Event Notifications
 -------------------------------------------------------------------------------------------------------------------------------------
 
 The application sends several event notifications to the application running on the MS-SIP library. The application needs to handle these events as necessary.
 
-<span id="4._Eyeball_MS-SIP:_APIs" class="anchor"><span id="_bookmark9" class="anchor"></span></span>Eyeball MS-SIP: APIs
+4. <span id="4._Eyeball_MS-SIP:_APIs" class="anchor"><span id="_bookmark9" class="anchor"></span></span>Eyeball MS-SIP: APIs
 =========================================================================================================================
 
 The Library
 -----------
 
 > The library uses the concept of *line* as follows:
->
-> An application program may be a single-line application or a
-> multi-line application.
->
-> Each line is identified using a number. For example, if an application
-> has 3 lines, the lines will be denoted as lines 0, 1 and 2.
->
-> When an incoming call is received, Eyeball Messenger SDK assigns the
-> first available line to the call. If all lines are busy, the caller
-> will receive “Busy Here” and the call will not be established.
->
-> The SIP Communicator control uses the concept of *multiple SIP
-> accounts*:
->
-> An application program may register multiple user accounts with
-> multiple SIP proxy servers. Each SIP account is identified using a
-> number provided by the application programmer.
->
-> A SIP account could have multiple call lines, but not the reverse. A
-> call line already used by one SIP account cannot be re-used by another
-> SIP account.
->
-> Methods and events of the library are described in the next section.
->
-> ![](media/image2.jpeg)
->
-> *Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents
-> pending. All rights reserved.*
+
+* An application program may be a single-line application or a multi-line application.
+
+* Each line is identified using a number. For example, if an application has 3 lines, the lines will be denoted as lines 0, 1 and 2.
+
+* When an incoming call is received, Eyeball Messenger SDK assigns the first available line to the call. If all lines are busy, the caller will receive “Busy Here” and the call will not be established.
+
+* The SIP Communicator control uses the concept of *multiple SIP accounts*:
+
+* An application program may register multiple user accounts with multiple SIP proxy servers. Each SIP account is identified using a number provided by the application programmer.
+
+* A SIP account could have multiple call lines, but not the reverse. A call line already used by one SIP account cannot be re-used by another SIP account.
+
+* Methods and events of the library are described in the next section.
+
 
 <span id="4.1_MS-SIP_Methods" class="anchor"><span id="_bookmark10" class="anchor"></span></span>MS-SIP Methods
 ---------------------------------------------------------------------------------------------------------------
