@@ -212,12 +212,13 @@ The Library
 * Methods and events of the library are described in the next section.
 
 
-<span id="4.1_MS-SIP_Methods" class="anchor"><span id="_bookmark10" class="anchor"></span></span>MS-SIP Methods
+4.1 <span id="4.1_MS-SIP_Methods" class="anchor"><span id="_bookmark10" class="anchor"></span></span>MS-SIP Methods
 ---------------------------------------------------------------------------------------------------------------
 
 ### Methods
 
-1.  **Setting up the Library**
+**4.1.1 Setting up the Library**
+---------------------------------------------------------------------------------------------------------------
 
 > *Use the following APIs for setting up TURN and SIP-Proxy.
 > MsSipLibrary exposes two APIs for using predefined IP and port for
