@@ -1947,10 +1947,11 @@ Legal and Contact Information
 > Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents
 > pending. All rights reserved.
 
-  | **Department** | **E-mail** | 
-  |-------------|---------------|
-  | Sales           | <sales@eyeball.com> |
-  | Technical Support | <techsupport@eyeball.com> |
+| **Department** | **E-mail** |
+| ------------- | ------------- |
+| Sales           | <sales@eyeball.com> |
+| Technical Support | <techsupport@eyeball.com> |
+
 
 > **Corporate Headquarters:**
 >
