@@ -51,8 +51,8 @@ Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents pending. All r
 >
 > ![](media/image2.jpeg)
 >
-> *Copyright © 2002-2013 Eyeball Networks Inc. Patented and patents
-> pending. All rights reserved.*
+
+*Copyright © 2002-2013 Eyeball Networks Inc. Patented and patents pending. All rights reserved.*
 
 <span id="1.1._Supported_Platforms_and_Features" class="anchor"><span id="_bookmark2" class="anchor"></span></span>Supported Platforms and Features
 ---------------------------------------------------------------------------------------------------------------------------------------------------
