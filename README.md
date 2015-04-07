@@ -232,82 +232,64 @@ The Library
 | Variable | Description |
 | ------------- | ------------- |
 | `sTurnUdpAddress` | TURN UDP server address  |
-| iTurnUdpPort | TURN UDP server port  |
-| sTurnTcpAddress | TURN TCP server address |
-| iTurnTcpPort | TURN TCP server port |
+| `iTurnUdpPort` | TURN UDP server port  |
+| `sTurnTcpAddress` | TURN TCP server address |
+| `iTurnTcpPort` | TURN TCP server port |
 
 #### SetSipServerConfiguration (iAccount, sSipProxyAddress, iSipPort, sSipDomain)
 
 > Set SIP server configuration.
 
-iAccount
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number  |
+| ` sSipProxyAddress` | SIP server address  |
+| `iSipPort` | SIP server port |
+| `sSipDomain` | SIP domain |
 
-The account number. sSipProxyA ddress:
-
-SIP server address.
-
-iSipPort:
-
-SIP server port.
-
-sSipDomain
-
-:
-
-SIP domain.
 
 #### SetInterface(bMedia, &vsIPAddress)
 
-Set the network interface(s) for media and signaling.
+> Set the network interface(s) for media and signaling.
 
-> *bMedia*:
+| Variable | Description |
+| ------------- | ------------- |
+| `bMedia` | Is true for media candidates, false for signaling.  |
+| `vsIPAddress` | Is the list of IP addresses  |
 
-Is true for media candidates, false for signaling.
-
-vsIPAddres s:
-
-Is the list of IP addresses.
 
 #### SetPortRange(bMedia, uLower, uUpper)
 
-Set the port ranges for media and signaling.
+> Set the port ranges for media and signaling.
 
-> *bMedia*:
-
-Is true for media candidates, false for signaling.
-
-> *uLower*:
-
-Is the minimum port value.
-
-> *uUpper*:
-
-Is the maximum port value.
+| Variable | Description |
+| ------------- | ------------- |
+| `bMedia` | Is true for media candidates, false for signaling.  |
+| `uLower` | Is the minimum port value  |
+| `uUpper` | Is the maximum port value |
 
 #### SetCertificateVerificationCallback( callback)
 
-Set the callback function which will be invoked for verification of
-certificate for TLS connection. Return 1 if the verification is to be
+> Set the callback function which will be invoked for verification of certificate for TLS connection. Return 1 if the verification is to be
 succeeded, 0 if the verification fails and the connection is to be
 teared down
 
-callback:
+| Variable | Description |
+| ------------- | ------------- |
+| `callback` | the callback function |
 
-> the callback function.
 
 #### StartSipCompressionNegotiation( iAccount)
 
 > Start negotiation if SIP compression is to be enabled.
->
-> iAccount:
->
-> The account number.
+
+| Variable | Description |
+| ------------- | ------------- |
+| `iAccount` | The account number |
 
 ### Standard Lync Sign in
 
-> *After setting the SIP-Proxy address of Lync Edge or Front end the
-> following APIs should be used for sign in. After using these APIs
-> MsSipLibrary will work as a Lync Client.*
+> *After setting the SIP-Proxy address of Lync Edge or Front end the following APIs should be used for sign in. After using these APIs MsSipLibrary will work as a Lync Client.*
 
 #### Login (iAccount, sUsername, sPassword)
 
