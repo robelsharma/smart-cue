@@ -288,6 +288,7 @@ teared down
 | `iAccount` | The account number |
 
 ### Standard Lync Sign in
+-------------------------------------------------------------------------------------------------------------------
 
 > *After setting the SIP-Proxy address of Lync Edge or Front end the following APIs should be used for sign in. After using these APIs MsSipLibrary will work as a Lync Client.*
 
@@ -312,6 +313,7 @@ teared down
 
 
 ### Configure Library to work without signing in
+---------------------------------------------------------------------------------------------------------------------
 
 > *MsSipLibrary can receive and make call and initiate an IM session without sign-in . To enable this feature make MsSipLibrary a TrustedApp in Lync Front-End topology and create a static route for the trusted app listening port for receiving call and create an application endpoint for that trusted application for making outbound call.*
 
