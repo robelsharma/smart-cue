@@ -1931,10 +1931,7 @@ Fired when data is received on the audio RTP channel
 >
 > Number of CSRC
 >
-> ![](media/image2.jpeg)
->
-> *Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents
-> pending. All rights reserved.*
+
 
 <span id="5.__Legal_and_Contact_Information" class="anchor"><span id="_bookmark12" class="anchor"></span></span>Legal and Contact Information
 =============================================================================================================================================
@@ -1944,8 +1941,6 @@ Fired when data is received on the audio RTP channel
 Legal and Contact Information
 -----------------------------
 
-> Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents
-> pending. All rights reserved.
 
 | **Department** | **E-mail** |
 | ------------- | ------------- |
