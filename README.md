@@ -228,26 +228,17 @@ The Library
 #### SetTurnServerConfiguration (sTurnUdpAddress, iTurnUdpPort, sTurnTcpAddress, iTurnTcpPort)
 
 > Set TURN server configuration
->
-> sTurnUdpAd dress:
->
-> TURN UDP server address.
->
-> iTurnUdpPo rt
->
-> TURN UDP server port.
->
-> sTurnTcpAd dress:
->
-> TURN TCP server address.
 
-iTurnTcpPo rt:
-
-TURN TCP server port.
+| Variable | Description |
+| ------------- | ------------- |
+| sTurnUdpAddress | TURN UDP server address  |
+| iTurnUdpPort | TURN UDP server port  |
+| sTurnTcpAddress | TURN TCP server address |
+| iTurnTcpPort | TURN TCP server port |
 
 #### SetSipServerConfiguration (iAccount, sSipProxyAddress, iSipPort, sSipDomain)
 
-Set SIP server configuration.
+> Set SIP server configuration.
 
 iAccount
 
