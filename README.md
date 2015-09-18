@@ -1889,3 +1889,95 @@ Legal and Contact Information
 >
 > *Copyright © 2002-2014 Eyeball Networks Inc. Patented and patents
 > pending. All rights reserved.*
+
+
+
+auth_server
+===
+The auth_server is the central authentication hub for Eyeball servers. For more information, see the online manual page [here](https://bitbucket.org/eyeballnetworks/auth_server/wiki/man). **Run all below commands in the root of the project's directory.**
+
+## Dependencies
+### Server
+```bash
+
+# curl -sL https://rpm.nodesource.com/setup | bash -
+# yum install -y nodejs
+# npm install ffi commander sazzle mysql squel q restify
+```
+### Test clients
+```bash
+# npm install saslmechanisms sasl-scram-sha-1 sasl-plain
+```
+## Tools (including tool/manage)
+```bash
+# npm install bitwise-xor
+```
+
+## Running
+The auth_server will **not** run out of the box. First, you need to generate an https key and encrypt the information about it for the auth_server to read.
+
+### tool/manage
+The `tool/manage` script is used to manage GPG encrypted config files for the auth_server. Information about the HTTPS private keys and the DB credentials is stored in these encrypted files (`.https_data.gpg` and `.db_data.gpg` respectively). See `-h` for help.
+
+```bash
+## Generate your https key and cert, if needed
+# openssl req -x509 -sha256 -newkey rsa:2048 -keyout key.pem -out cert.pem -days XXX
+## Enter a private key passphrase...
+
+## Describe the key setup to auth_server
+## Note, tab completion works within the tool
+# ./tool/manage https set
+key path: key/key.pem  # Example paths
+cert path: key/cert.pem 
+private key passphrase: pass_used_for_key.pem # key.pem's pass is needed
+encrypting data...
+
+## You'll now be prompted for a passphrase via GPG. This passphrase should
+## be used later with the auth_server via --httpskey to allow it read access.
+## Since you don't generally want to specify the passphrase on command line
+## in plain text, you can invoke some script or call to return it for you.
+```
+
+After this, the auth_server will run, but none of the authentication methods will be supported. See each of the following points below for how to get things running. At any time, to run the server, use:
+```bash
+## The key might be read using curl or from an file; this is up to you
+# ./js/index.js --httpskey $(read_key_from_some_safe_place)
+```
+
+### DB
+To enable db support, you need to generate another GPG key containing the db information using the `tool/manage` script.
+```bash
+# ./tool/manage db set 
+```
+
+The auth_server expects databases will contain a salted_hash for each user_id which has been generated using HMAC-SHA1. A tool is provided to help with this, located as `tool/hmac`.
+
+After configuring the DB, you can enable it by specifying the `--dbkey`.
+```bash
+# read_safe_key is an example; retrieve the passphrases however you'd like
+# ./js/index.js --httpskey $(read_safe_key) --dbkey $(read_safe_db_key)
+```
+
+#### Schema changes
+There is a `tool/schema.sql` file which contains the required delta from an existing eyeball database to that which auth_server requires.
+
+### STS
+Ephemeral credential support is available via sts and enabled via cmdline params. To get sts working, you need to specify `--sts` and `--stsport`.
+
+### Auth module
+For auth module support, you'll need to compile the native C++ backend and then specify which auth module should be loaded. You can specify the path to the shared object using `-s`.
+```bash
+$ make
+```
+On Redhat devtoolset-3 and boost(Version 1.58.0 or upper) must be installed to compile this.
+
+
+## Migrating
+If you have an existing auth_server install and you're updating, don't install the new auth_server on top of the previous one; give it a fresh install. You'll need to run the above `npm` commands again (not the `apt-get` commands). You may copy over your key/cert, which you generated. You should re-run the `tool/manage` script to regenerate your `.db_data.gpg` and `.https_data.gpg`.
+
+## Testing
+The test suite can be executed by running:
+```bash
+$ make test
+```
+Each JSON file in the `test/json` directory will be treated as a test and executed.
