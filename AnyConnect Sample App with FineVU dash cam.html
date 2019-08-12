@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Using AnyConnect sample apps for Android and FineVU</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+    <link href="https://anyconnect.com/images/favicon.png?20190723162022" rel="icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://anyconnect.com/css/anyconnect-standalone.css?20190723162022">
+</head>
+
+<body>
+    <div class="main-nav-container">
+        <nav id="main-nav" class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="https://anyconnect.com/"><img src="https://anyconnect.com/wp-content/uploads/AnyConnect-sm.svg?20190723162022"></a>
+            </div>
+        </nav>
+    </div>
+    <div id="content-main-container" class="content-main-container container">
+                <div class="content-container">
+                    <a name="HowToUse"></a>
+                    <h3 class="docs-heading">How To Use AnyConnect Sample App with FineVU dash cam:</h3>
+                    <ol>
+                    <strong>FineVU Camera Setup for the developers:</strong> 
+                    <ul>   
+                      <li>Unzip <strong>AnyConnectCameraApp.zip</strong> on a computer and plug the FineVU SD card on the USB</li>
+                      <li>Copy all the content of <strong>AnyConnectCameraApp</strong> folder to the root directory of the FineVU memory card</li>
+                      <li>Safely eject the memory card and plug the card to the FineVU camera</li>
+                      <li>Plug the USB-UART to the camera and the computer and run a screen session with the baud rate 115200 to access the camera</li>
+                      <li>On the camera console go to the directory <strong>/tmp/SD1/bin</strong></li>
+                      <p>Execute the <strong>StreamApp</strong></p>
+                    </ul>
+                    <strong>FineVU Camera Setup for the users:</strong> 
+                    <ul>   
+                      <li>Insert the SD card to the camera which has the AnyConnect platform software.</li>
+                      <li>Power on the FineVU Dashcam</li>
+                      <li>Wait for <strong>2 minutes</strong> to complete the boot-up</li>
+                      <p>Now pair the camera using the AnyConnect Android Sample App</p>
+                    </ul>
+                    <strong>Launch AnyConnect Android Sample App and Onboard with below details:</strong>
+                      <ul>
+                        <li>Endpoint Type: <strong>App</strong></li>
+                        <li>Mechanism: <strong>Field</strong></li>
+                        <li>Endpoint Name: <strong>YourName-CompanyName</strong></li>
+                      <p>Then click <strong>Onboard</strong></p>
+                    </ul>
+                      <ul class="img-container">
+                        <li><img src="https://anyconnect.com/downloads/images/ios/launch.png"><img src="https://anyconnect.com/downloads/images/arrow-right.png"><img src="https://anyconnect.com/downloads/images/ios/launch1.png"><img src="https://anyconnect.com/downloads/images/arrow-right.png"><img src="https://anyconnect.com/downloads/images/ios/launch2.png"></li>
+                      </ul>
+                    
+                    <strong>Grant all required Permissions for AnyConnect Sample App:</strong>
+                      <ul class="img-container">
+                        <li><img src="https://anyconnect.com/downloads/images/android/launch1.png"><img src="https://anyconnect.com/downloads/images/arrow-right.png"><img src="https://anyconnect.com/downloads/images/android/launch2.png"><img src="https://anyconnect.com/downloads/images/arrow-right.png"><img src="https://anyconnect.com/downloads/images/android/launch3.png"></li>
+                      </ul>
+                    <strong>Successfully Onboarded, and Login with Google:</strong>
+                      <ul class="img-container">
+                        <li><img src="https://anyconnect.com/downloads/images/ios/launch3.png"><img src="https://anyconnect.com/downloads/images/arrow-right.png"><img src="https://anyconnect.com/downloads/images/ios/login.png"><img src="https://anyconnect.com/downloads/images/arrow-right.png"><img src="https://raw.githubusercontent.com/robelsharma/smart-cue/master/0.JPEG"></li>
+                      </ul>
+                    <strong>Onboard FineVU camera using WiFi-AP:</strong>
+                    <ul>
+                        <li>Click on <strong>WiFi-AP</strong></li>
+                        <li>It will automatically <strong>SCAN</strong> and list the available access points</li>
+                        <li>Select the access point <strong>FineVU_pal</strong> and put the password <strong>1234567890</strong></li>
+                        <li>Then press <strong>OK</strong></li>
+                        <li>Onboard FineVU_pal <strong>pops-up</strong></li>
+                        <li>Put the WiFi access point <strong>SSID</strong> and <strong>Password</strong> which has Internet</li>
+                        <li>Put the IP <strong>192.168.1.42</strong> and port <strong>8080</strong> and press <strong>Yes</strong></li>
+                        <li>Then if the FineVU camera gets the internet the app will be <strong>disconnected</strong> from the WiFi-AP connection.</li>
+                      <p> Now close the AnyConnect Android app and reconnect the Mobile with the WiFi access point which has Internet and will see <strong>AnyConnect Smart Camera</strong> on ACL tab</p>
+                      <p> Then go to the <strong>STREAM</strong> tab of the android App and select the camera to stream.</p>
+                      <ul class="img-container">
+                        <li><img src="https://raw.githubusercontent.com/robelsharma/smart-cue/master/1.JPEG"><img src="https://anyconnect.com/downloads/images/arrow-right.png"><img src="https://raw.githubusercontent.com/robelsharma/smart-cue/master/6.JPEG"><img src="https://anyconnect.com/downloads/images/arrow-right.png"><img src="https://raw.githubusercontent.com/robelsharma/smart-cue/master/7.JPEG"></li>
+                      </ul>
+                      <ul class="img-container">
+                        <li><img src="https://raw.githubusercontent.com/robelsharma/smart-cue/master/8.JPEG"></li>
+                      </ul>
+                      </ul>
+                </ol>    
+        </div>
+    </div>
+    <footer id="footer" class="fixed">
+      <div class="lower-footer">
+          <div class="container clearfix">
+             <div class="float-left legal">
+               <span>
+                 Copyright © 2019 AnyConnect Private Limited. All rights reserved.</span>
+            </div>
+            <div class="float-right legal-links">
+               <ul id="menu-footer-menu" class="navbar-footer"><li id="menu-item-6750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6750"><a href="https://anyconnect.com/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-6751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6751"><a href="https://anyconnect.com/privacy-policy/">Privacy &amp; Policy</a></li>
+<li id="menu-item-6752" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6752"><a href="https://anyconnect.com/service-level-agreement/">Service Level Agreement</a></li>
+</ul>            </div>
+         </div>
+      </div>
+</footer>
+    <div id="back-to-top" class="back-to-top"><i onclick="topFunction()" class="fa fa-angle-up"></i></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://anyconnect.com/scripts/back-to-top.js"></script>
+    <script src="https://anyconnect.com/scripts/common.js"></script>
+<script>
+</script>
+</body>
+</html>
+        
